@@ -56,18 +56,19 @@ Your shell prompt will change to show the name of the activated environment.
 
 To exit the environment use: ```exit```
 
-## Install SQLAlchemy
+## Install Flask and Flask-SQLAlchemy
 
 Within the activated environment, use the following command to install SQLAlchemy:
 
 ```
-$ pip install SQLAlchemy
+$ pip install Flask Flask-SQLAlchemy
 ```
 
-Alternatively, add ```SQLAlchemy``` to a requirements.txt file.
+Alternatively, add ```Flask``` and ```Flask-SQLAlchemy``` to a requirements.txt file.
 
 ```
-SQLAlchemy
+Flask
+Flask-SQLAlchemy
 ```
 app/requirements.txt
 
