@@ -4,6 +4,8 @@
 
 See [README.md](./100/README.md)
 
-## 200 - Running Our Application
+## 200 - Setting up the Database and Model
+
+See [README.md](./200/README.md)
 
 MORE
