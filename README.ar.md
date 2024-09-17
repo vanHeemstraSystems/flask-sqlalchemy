@@ -1,4 +1,4 @@
-قارورة sqlalchemy
+flask-sqlalchemy
 
 # قارورة SQLAlchemy
 
