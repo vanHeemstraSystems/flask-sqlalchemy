@@ -2,14 +2,14 @@
 
 # قارورة SQLAlchemy
 
-> Flask is a lightweight Python web framework that provides useful tools and features for creating web applications in the Python Language.
-> SQLAlchemy is an SQL toolkit that provides efficient and high-performing database access for relational databases.
+> Flask هو إطار ويب Python خفيف الوزن يوفر أدوات وميزات مفيدة لإنشاء تطبيقات الويب بلغة Python.
+> SQLAlchemy عبارة عن مجموعة أدوات SQL توفر وصولاً فعالاً وعالي الأداء إلى قاعدة البيانات لقواعد البيانات العلائقية.
 
-Based on "How to Use Flask-SQLAlchemy to Interact with Databases in a Flask Application" at <https://www.digitalocean.com/community/tutorials/how-to-use-flask-sqlalchemy-to-interact-with-databases-in-a-flask-application>
+استنادًا إلى "كيفية استخدام Flask-SQLAlchemy للتفاعل مع قواعد البيانات في تطبيق Flask" في<https://www.digitalocean.com/community/tutorials/how-to-use-flask-sqlalchemy-to-interact-with-databases-in-a-flask-application>
 
-## 100- مقدمة
+## 100 - Introduction
 
-يرى[README.md](./100/README.md)
+See [README.md](./100/README.md)
 
 ## 200 - المتطلبات
 
