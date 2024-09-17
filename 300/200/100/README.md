@@ -51,4 +51,20 @@ You then create a Flask application instance called ```app```, which you use to 
 
 - ```SQLALCHEMY_TRACK_MODIFICATIONS```: A configuration to enable or disable tracking modifications of objects. You set it to ```False``` to disable tracking and use less memory. For more, see [the configuration page](https://flask-sqlalchemy.palletsprojects.com/en/2.x/config/) in the Flask-SQLAlchemy documentation.
 
+> **Note**:
+> 
+> If you want to use another database engine such as PostgreSQL or MySQL, you’ll need to use the proper URI.
+>
+> For PostgreSQL, use the following format:
+>
+> ```postgresql://username:password@host:port/database_name```
+>
+> For MySQL:
+>
+> ```mysql://username:password@host:port/database_name```
+>
+> For more, see the SQLAlchemy documentation for engine configuration.
+
+After configuring SQLAlchemy by setting a database URI and disabling tracking, you create a database object using the ```SQLAlchemy``` class, passing the application instance to connect your Flask application with SQLAlchemy. You store your database object in a variable called ```db```. You’ll use this ```db``` object to interact with your database.
+
 MORE
