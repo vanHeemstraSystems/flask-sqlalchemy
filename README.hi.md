@@ -1,4 +1,4 @@
-फ्लास्क-sqlalchemy
+कुप्पी-sqlalchemy
 
 # फ्लास्क SQLAlchemy
 
@@ -7,11 +7,11 @@
 
 "फ्लास्क एप्लिकेशन में डेटाबेस के साथ इंटरैक्ट करने के लिए फ्लास्क-SQLAlchemy का उपयोग कैसे करें" पर आधारित<https://www.digitalocean.com/community/tutorials/how-to-use-flask-sqlalchemy-to-interact-with-databases-in-a-flask-application>
 
-## 100 - Introduction
+## 100 - परिचय
 
 देखना[README.md](./100/README.md)
 
-## 200 - Requirements
+## 200 - आवश्यकताएँ
 
 देखना[README.md](./200/README.md)
 
