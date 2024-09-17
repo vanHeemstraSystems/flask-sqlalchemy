@@ -6,4 +6,8 @@ In this step, you’ll set up your database connection, and create an SQLAlchemy
 
 See [README.md](./100/README.md)
 
+## 200 - Declaring The Table
+
+See [README.md](./200/README.md)
+
 MORE

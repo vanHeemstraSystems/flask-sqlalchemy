@@ -65,6 +65,27 @@ You then create a Flask application instance called ```app```, which you use to 
 >
 > For more, see the SQLAlchemy documentation for engine configuration.
 
-After configuring SQLAlchemy by setting a database URI and disabling tracking, you create a database object using the ```SQLAlchemy``` class, passing the application instance to connect your Flask application with SQLAlchemy. You store your database object in a variable called ```db```. You’ll use this ```db``` object to interact with your database.
+**OPTIMIZATION**: We move the configuration to a special ```config.py``` file.
 
-MORE
+Update the ```app.py``` file by adding the reference to a ```config.py``` file:
+
+```
+...
+# configuration settings from config.py
+app = Flask(__name__)
+app.config.from_object(config)
+...
+```
+app/app.py
+
+Then add the following to the ```config.py``` file:
+
+```python title="config.py"
+import os
+
+SQLALCHEMY_DATABASE_URI = 'sqlite:///database.db'
+SQLALCHEMY_TRACK_MODIFICATIONS = False
+```
+app/config.py
+
+After configuring SQLAlchemy by setting a database URI and disabling tracking, you create a database object using the ```SQLAlchemy``` class, passing the application instance to connect your Flask application with SQLAlchemy. You store your database object in a variable called ```db```. You’ll use this ```db``` object to interact with your database.
