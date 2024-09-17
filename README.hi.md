@@ -1,4 +1,4 @@
-कुप्पी-sqlalchemy
+फ्लास्क-sqlalchemy
 
 # फ्लास्क SQLAlchemy
 
