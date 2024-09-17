@@ -43,6 +43,12 @@ db = SQLAlchemy(app)
 ```
 app/app.py
 
+Here, you construct a path for your SQLite database file. You first define a base directory as the current directory. You use the [os.path.abspath()](https://docs.python.org/3.8/library/os.path.html#os.path.abspath) function to get the absolute path of the current file’s directory. The special ```__file__``` variable holds the pathname of the current ```app.py``` file. You store the absolute path of the base directory in a variable called ```basedir```.
 
+You then create a Flask application instance called ```app```, which you use to configure two Flask-SQLAlchemy [configuration keys](https://flask-sqlalchemy.palletsprojects.com/en/2.x/config/):
+
+- ```SQLALCHEMY_DATABASE_URI```: The database URI to specify the database you want to establish a connection with. In this case, the URI follows the format ```sqlite:///path/to/database.db```. You use the [os.path.join()](https://docs.python.org/3.8/library/os.path.html#os.path.join) function to intelligently join the base directory you constructed and stored in the ```basedir``` variable, and the ```database.db``` file name. This will connect to a ```database.db``` database file in your ```app``` directory. **The file will be created once you initiate the database**.
+
+- ```SQLALCHEMY_TRACK_MODIFICATIONS```: A configuration to enable or disable tracking modifications of objects. You set it to ```False``` to disable tracking and use less memory. For more, see [the configuration page](https://flask-sqlalchemy.palletsprojects.com/en/2.x/config/) in the Flask-SQLAlchemy documentation.
 
 MORE
