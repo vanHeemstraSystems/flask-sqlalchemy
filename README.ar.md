@@ -1,16 +1,16 @@
-اسم المستودع
+قارورة sqlalchemy
 
-# اسم المستودع
+# قارورة SQLAlchemy
 
-استنادا إلى "ABC" في<https://www.abc.com/>
+استنادًا إلى "كيفية استخدام Flask-SQLAlchemy للتفاعل مع قواعد البيانات في تطبيق Flask" في<https://www.digitalocean.com/community/tutorials/how-to-use-flask-sqlalchemy-to-interact-with-databases-in-a-flask-application>
 
 ## 100- مقدمة
 
 يرى[README.md](./100/README.md)
 
-## 200 - المتطلبات
+## 200 - Requirements
 
-يرى[README.md](./200/README.md)
+See [README.md](./200/README.md)
 
 ## 300 – بناء تطبيقنا
 
