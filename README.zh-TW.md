@@ -21,4 +21,4 @@ See [README.md](./100/README.md)
 
 ## 400 - 結論
 
-See [README.md](./400/README.md)
+看[README.md](./400/README.md)
