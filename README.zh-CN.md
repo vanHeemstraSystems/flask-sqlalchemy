@@ -1,10 +1,10 @@
-存储库名称
+Flask-sqlalchemy
 
-# 存储库名称
+# Flask SQLAlchemy
 
-Based on "ABC" at <https://www.abc.com/>
+基于“如何使用 Flask-SQLAlchemy 与 Flask 应用程序中的数据库进行交互”，位于<https://www.digitalocean.com/community/tutorials/how-to-use-flask-sqlalchemy-to-interact-with-databases-in-a-flask-application>
 
-## 100 - Introduction
+## 100 - 简介
 
 看[README.md](./100/README.md)
 
