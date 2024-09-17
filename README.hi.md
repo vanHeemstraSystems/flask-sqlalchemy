@@ -1,10 +1,10 @@
-भंडार-नाम
+फ्लास्क-sqlalchemy
 
-# भंडार का नाम
+# फ्लास्क SQLAlchemy
 
-"एबीसी" पर आधारित<https://www.abc.com/>
+"फ्लास्क एप्लिकेशन में डेटाबेस के साथ इंटरैक्ट करने के लिए फ्लास्क-SQLAlchemy का उपयोग कैसे करें" पर आधारित<https://www.digitalocean.com/community/tutorials/how-to-use-flask-sqlalchemy-to-interact-with-databases-in-a-flask-application>
 
-## 100 - परिचय
+## 100 - Introduction
 
 देखना[README.md](./100/README.md)
 
@@ -16,6 +16,6 @@
 
 देखना[README.md](./300/README.md)
 
-## 400 - Conclusion
+## 400 - निष्कर्ष
 
 देखना[README.md](./400/README.md)
