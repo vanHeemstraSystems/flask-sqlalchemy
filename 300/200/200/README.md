@@ -1,9 +1,21 @@
 # 200 - Declaring The Table
 
-With the database connection established and the database object created, you’ll use the database object to create a database table for students, which is represented by a model — a Python class that inherits from a base class Flask-SQLAlchemy provides through the ```db``` database instance you created earlier. To define a student table as a model, add the following class to your ```app.py``` file:
+With the database connection established and the database object created, you’ll use the database object to create a database table for students, which is represented by a model — a Python class that inherits from a base class Flask-SQLAlchemy provides through the ```db``` database instance you created earlier. To reference your database models, add the following to your ```app.py``` file:
 
 ```python title="app.py"
-# ...
+...
+# import the database models
+from models import Base
+```
+app/app.py
+
+Next, create a file ```models.py``` in the same directory as ```app.py``` with the following content:
+
+```python title="models.py"
+#!/usr/bin/env python
+from sqlalchemy.ext.declarative import declarative_base
+
+Base = declarative_base()
 
 class Student(db.Model):
     id = db.Column(db.Integer, primary_key=True)
@@ -18,4 +30,7 @@ class Student(db.Model):
     def __repr__(self):
         return f'<Student {self.firstname}>'
 ```
-app/app.py
+
+To define a student table as a model, we added the Student class to our ```models.py``` file.
+
+MORE
