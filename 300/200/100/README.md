@@ -10,7 +10,7 @@ $ touch app.py
 
 This file will connect to an SQLite database called ```database.db```, and have a class called ```Student``` that represents your database students table for storing student information, in addition to your Flask routes. Add the following ```import``` statements at the top of ```app.py```:
 
-```
+```python title="app.py"
 #!/usr/bin/env python
 import os
 from flask import Flask, render_template, request, url_for, redirect
