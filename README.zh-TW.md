@@ -1,8 +1,8 @@
-儲存庫名稱
+Flask-sqlalchemy
 
-# 儲存庫名稱
+# Flask SQLAlchemy
 
-基於“ABC”<https://www.abc.com/>
+基於“如何使用 Flask-SQLAlchemy 與 Flask 應用程式中的資料庫進行互動”，位於<https://www.digitalocean.com/community/tutorials/how-to-use-flask-sqlalchemy-to-interact-with-databases-in-a-flask-application>
 
 ## 100 - 簡介
 
