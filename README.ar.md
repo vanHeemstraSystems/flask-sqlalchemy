@@ -7,9 +7,9 @@
 
 استنادًا إلى "كيفية استخدام Flask-SQLAlchemy للتفاعل مع قواعد البيانات في تطبيق Flask" في<https://www.digitalocean.com/community/tutorials/how-to-use-flask-sqlalchemy-to-interact-with-databases-in-a-flask-application>
 
-## 100- مقدمة
+## 100 - Introduction
 
-يرى[README.md](./100/README.md)
+See [README.md](./100/README.md)
 
 ## 200 - المتطلبات
 
