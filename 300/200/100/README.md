@@ -89,3 +89,10 @@ SQLALCHEMY_TRACK_MODIFICATIONS = False
 app/config.py
 
 After configuring SQLAlchemy by setting a database URI and disabling tracking, you create a database object using the ```SQLAlchemy``` class, passing the application instance to connect your Flask application with SQLAlchemy. You store your database object in a variable called ```db```. You’ll use this ```db``` object to interact with your database.
+
+```
+...
+# define a database
+db = SQLAlchemy(app)
+```
+app/app.py

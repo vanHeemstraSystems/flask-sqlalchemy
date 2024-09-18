@@ -16,4 +16,27 @@ set the ```app.py``` file as your Flask application using the ```FLASK_APP``` en
 (.venv) gitpod /workspace/flask-sqlalchemy/app (main) $ flask shell
 ```
 
+You will be prompted as below:
+
+```sql
+Python 3.12.6 (main, Sep  9 2024, 10:33:54) [GCC 11.4.0] on linux
+App: app
+Instance: /workspace/flask-sqlalchemy/app/instance
+>>> 
+```
+
+A Python interactive shell will be opened. This special shell runs commands in the context of your Flask application, so that the Flask-SQLAlchemy functions you’ll call are connected to your application.
+
+Import the database object and the student model, and then run the db.create_all() function to create the tables that are associated with your models. In this case you only have one model, which means that the function call will only create one table in your database:
+
+```sql
+>>> from app import db
+>>> from models import Student
+>>> db.create_all()
+```
+
+Leave the shell running, open another terminal window and navigate to your ```app``` directory. You will now see a new file called ```database.db``` in the ```app/instance``` directory.
+
+
+
 MORE
