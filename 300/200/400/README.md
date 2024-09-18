@@ -112,7 +112,7 @@ Use the Flask shell to add a few more students to your database:
 ```
 >>> student_sammy = Student(firstname='sammy', lastname='shark', email='sammy_shark@example.com', age=20, bio='Marine biology student')
 >>> student_carl = Student(firstname='carl', lastname='white', email='carl_white@example.com', age=22, bio='Marine geology student')
->>> db.session.add(student-sammy)
+>>> db.session.add(student_sammy)
 >>> db.session.add(student_carl)
 >>> db.session.commit()
 ```
