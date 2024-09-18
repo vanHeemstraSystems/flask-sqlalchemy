@@ -1,4 +1,4 @@
-फ्लास्क-sqlalchemy
+कुप्पी-sqlalchemy
 
 # फ्लास्क SQLAlchemy
 
@@ -15,7 +15,7 @@
 
 देखना[README.md](./200/README.md)
 
-## 300 - हमारे एप्लिकेशन का निर्माण
+## 300 - Building Our Application
 
 देखना[README.md](./300/README.md)
 
