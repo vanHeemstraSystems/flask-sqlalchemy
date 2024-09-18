@@ -9,6 +9,8 @@
 
 "फ्लास्क ब्लूप्रिंट और फ्लास्क-SQLAlchemy के साथ एक बड़े फ्लास्क अनुप्रयोग की संरचना कैसे करें" पर आधारित<https://www.digitalocean.com/community/tutorials/how-to-structure-a-large-flask-application-with-flask-blueprints-and-flask-sqlalchemy>
 
+"फ्लास्क एसक्यूएलकेमी एट स्केल" पर आधारित<https://github.com/vanHeemstraSystems/flask-sqlalchemy-at-scale/>
+
 ## 100 - परिचय
 
 देखना[README.md](./100/README.md)
