@@ -88,6 +88,24 @@ This will issue an ```INSERT``` statement, but you won’t get an ID back becaus
 >>> db.session.commit()
 ```
 
-**Tip**: If you see an error like ```Original exception was: (sqlite3.OperationalError) no such table: student``` ... TO DO
+Now that student John is added to the database, you can get its ID:
+
+```
+>>> print(student_john.id)
+```
+
+Output:
+
+```
+1
+```
+
+You can also use the ```db.session.add()``` method to edit an item in the database. For example, you can modify the student’s email like so:
+
+```
+>>> student_john.email = 'john_doe@example.com'
+>>> db.session.add(student_john)
+>>> db.session.commit()
+```
 
 MORE

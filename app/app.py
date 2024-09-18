@@ -6,21 +6,12 @@ from flask_sqlalchemy import SQLAlchemy
 from sqlalchemy.sql import func
 import config, socket
 
-# MOVED TO config
-# basedir = os.path.abspath(os.path.dirname(__file__))
-
-# import the database models
-# from models import Base
-
 # configuration settings from config.py
 app = Flask(__name__)
 app.config.from_object(config)
 
 # define a database
 db = SQLAlchemy(app)
-
-# associate the models with the database
-# db.Model = Base 
 
 class Student(db.Model):
     __tablename__ = 'student'
