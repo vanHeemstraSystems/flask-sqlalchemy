@@ -16,3 +16,6 @@ app.config.from_object(config)
 
 # define a database
 db = SQLAlchemy(app)
+
+# associate the models with the database
+db.Model = Base

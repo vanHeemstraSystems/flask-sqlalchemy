@@ -9,6 +9,17 @@ from models import Base
 ```
 app/app.py
 
+In addition, associate the models with the database:
+
+```python title="app.py"
+# define a database
+db = SQLAlchemy(app)
+
+# associate the models with the database
+db.Model = Base
+```
+app/app.py
+
 Next, create a file ```models.py``` in the same directory as ```app.py``` with the following content:
 
 ```python title="models.py"
