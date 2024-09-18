@@ -28,4 +28,55 @@ To add a student to your database, you’ll import the database object and the `
 >>>                        bio='Biologu student')
 ```
 
+The ```student_john``` object represents a student that will be added to the database, but this object has not been written to the database yet. Check out the object in the flask shell to see its representation string you constructed with the ```__repr__()``` method:
+
+```
+>>> student_john
+```
+
+You'll receive the following output:
+
+```
+<Student john>
+```
+
+Remember that you set ```firstname``` as the reference earlier on, here ```john```.
+
+You can get the value of columns using the class attributes you defined in the ```Student``` model:
+
+```
+>>> student_john.firstname
+```
+
+Output:
+
+```
+'john'
+```
+
+```
+>>> student_john.bio
+```
+
+Output:
+
+```
+'Biology student'
+```
+
+Because this student has not been added to the database yet, its ID will be ```None```:
+
+```
+>>> print(student_john.id)
+```
+
+Output:
+
+```
+None
+```
+
+To add this student to the database, you’ll first need to add it to a database session, which manages a database transaction. Flask-SQLAlchemy provides the db.session object through which you can manage your database changes. Add the student_john object to the session using the db.session.add() method to prepare it to be written to the database:
+
+
 MORE
