@@ -37,6 +37,13 @@ Import the database object and the student model, and then run the db.create_all
 
 Leave the shell running, open another terminal window and navigate to your ```app``` directory. You will now see a new file called ```database.db``` in the ```app/instance``` directory.
 
+**Note**: The ```db.create_all()``` function does **not** recreate or update a table if it already exists. For example, if you modify your model by adding a new column, and run the ```db.create_all()``` function, the change you make to the model will **not** be applied to the table if the table already exists in the database. The solution is to delete all existing database tables with the ```db.drop_all()``` function and then recreate them with the ```db.create_all()``` function like so:
 
+```
+>>> db.drop_all()
+>>> db.create_all()
+```
 
-MORE
+This will apply the modifications you make to your models, but **will also delete all the existing data in the database**. To update the database and preserve existing data, you’ll need to use [schema migration](https://en.wikipedia.org/wiki/Schema_migration), which allows you to modify your tables and preserve data. You can use the [Flask-Migrate](https://flask-migrate.readthedocs.io/en/latest/index.html) extension to perform SQLAlchemy schema migrations through the Flask command-line interface.
+
+If you receive an error, make sure your database URI and your model declaration are correct.
