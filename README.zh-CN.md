@@ -1,4 +1,4 @@
-Flask-sqlalchemy
+flask-sqlalchemy
 
 # Flask SQLAlchemy
 
