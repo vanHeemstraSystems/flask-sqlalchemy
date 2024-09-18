@@ -30,12 +30,11 @@ A Python interactive shell will be opened. This special shell runs commands in t
 Import the database object and the student model, and then run the db.create_all() function to create the tables that are associated with your models. In this case you only have one model, which means that the function call will only create one table in your database:
 
 ```sql
->>> from app import db
->>> from models import Student
+>>> from app import db, Student
 >>> db.create_all()
 ```
 
-Leave the shell running, open another terminal window and navigate to your ```app``` directory. You will now see a new file called ```database.db``` in the ```app/instance``` directory.
+Leave the shell running, open another terminal window and navigate to your ```app``` directory. You will now see a new file called ```app.db``` in the ```app/instance``` directory. This is a binary file.
 
 **Note**: The ```db.create_all()``` function does **not** recreate or update a table if it already exists. For example, if you modify your model by adding a new column, and run the ```db.create_all()``` function, the change you make to the model will **not** be applied to the table if the table already exists in the database. The solution is to delete all existing database tables with the ```db.drop_all()``` function and then recreate them with the ```db.create_all()``` function like so:
 
