@@ -1,11 +1,11 @@
 कुप्पी-sqlalchemy
 
-# Flask SQLAlchemy
+# फ्लास्क SQLAlchemy
 
 > फ्लास्क एक हल्का पायथन वेब फ्रेमवर्क है जो पायथन भाषा में वेब एप्लिकेशन बनाने के लिए उपयोगी उपकरण और सुविधाएँ प्रदान करता है।
 > SQLAlchemy एक SQL टूलकिट है जो रिलेशनल डेटाबेस के लिए कुशल और उच्च प्रदर्शन वाले डेटाबेस एक्सेस प्रदान करता है।
 
-"फ्लास्क एप्लिकेशन में डेटाबेस के साथ इंटरैक्ट करने के लिए फ्लास्क-SQLAlchemy का उपयोग कैसे करें" पर आधारित<https://www.digitalocean.com/community/tutorials/how-to-use-flask-sqlalchemy-to-interact-with-databases-in-a-flask-application>
+Based on "How to Use Flask-SQLAlchemy to Interact with Databases in a Flask Application" at <https://www.digitalocean.com/community/tutorials/how-to-use-flask-sqlalchemy-to-interact-with-databases-in-a-flask-application>
 
 ## 100 - परिचय
 
@@ -13,9 +13,9 @@
 
 ## 200 - आवश्यकताएँ
 
-देखना[README.md](./200/README.md)
+See [README.md](./200/README.md)
 
-## 300 - हमारे एप्लिकेशन का निर्माण
+## 300 - Building Our Application
 
 देखना[README.md](./300/README.md)
 
