@@ -76,7 +76,18 @@ Output:
 None
 ```
 
-To add this student to the database, you’ll first need to add it to a database session, which manages a database transaction. Flask-SQLAlchemy provides the db.session object through which you can manage your database changes. Add the student_john object to the session using the db.session.add() method to prepare it to be written to the database:
+To add this student to the database, you’ll first need to add it to a *database session*, which manages a database transaction. Flask-SQLAlchemy provides the ```db.session``` object through which you can manage your database changes. Add the ```student_john``` object to the session using the ```db.session.add()``` method to prepare it to be written to the database:
 
+```
+>>> db.session.add(student_john)
+```
+
+This will issue an ```INSERT``` statement, but you won’t get an ID back because the database transaction is still not committed. To commit the transaction and apply the change to database, use the ```db.session.commit()``` method:
+
+```
+>>> db.session.commit()
+```
+
+**Tip**: If you see an error like ```Original exception was: (sqlite3.OperationalError) no such table: student``` ... TO DO
 
 MORE
