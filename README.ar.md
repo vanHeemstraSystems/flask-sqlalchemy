@@ -7,6 +7,8 @@
 
 استنادًا إلى "كيفية استخدام Flask-SQLAlchemy للتفاعل مع قواعد البيانات في تطبيق Flask" في<https://www.digitalocean.com/community/tutorials/how-to-use-flask-sqlalchemy-to-interact-with-databases-in-a-flask-application>
 
+استنادًا إلى "كيفية إنشاء تطبيق قارورة كبيرة باستخدام مخططات قارورة وFlask-SQLAlchemy" في<https://www.digitalocean.com/community/tutorials/how-to-structure-a-large-flask-application-with-flask-blueprints-and-flask-sqlalchemy>
+
 ## 100- مقدمة
 
 يرى[README.md](./100/README.md)
