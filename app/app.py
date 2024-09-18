@@ -2,9 +2,10 @@
 import os
 import datetime, time
 
+from sqlalchemy import create_engine, select, update, func
+from sqlalchemy.sql import func
 from flask import Flask, render_template, request, url_for, redirect
 from flask_sqlalchemy import SQLAlchemy
-from sqlalchemy.sql import func
 import config, socket
 
 # configuration settings from config.py

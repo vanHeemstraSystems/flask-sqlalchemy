@@ -15,6 +15,7 @@ This file will connect to an SQLite database called ```app.db```, and have a cla
 import os
 import datetime, time
 
+from sqlalchemy import create_engine, select, update, func
 from sqlalchemy.sql import func
 from flask import Flask, render_template, request, url_for, redirect
 from flask_sqlalchemy import SQLAlchemy
