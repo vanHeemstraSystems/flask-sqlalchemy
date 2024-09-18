@@ -92,5 +92,69 @@ Add the following code inside the ```base.html``` file:
 ```
 app/templates/base.html
 
+Save and close the file.
 
-MORE
+This base template has all the HTML boilerplate you’ll need to reuse in your other templates. The ```title``` block will be replaced to set a title for each page, and the ```content``` block will be replaced with the content of each page. The navigation bar has three links: one for the index page, which links to the ```index()``` view function using the ```url_for()``` helper function, one for a **Create** page, and one for an **About** page if you choose to add one to your application. You’ll edit this file later after you add a page for creating new students to make the **Create** link functional.
+
+Next, open a new ```index.html``` template file. This is the template you referenced in the ```app.py``` file:
+
+```
+$ cd app
+nano templates/index.html
+```
+Add the following code to it:
+
+```html title="index.html"
+{% extends 'base.html' %}
+
+{% block content %}
+    <h1 class="title">{% block title %} Students {% endblock %}</h1>
+    <div class="content">
+        {% for student in students %}
+            <div class="student">
+                <p><b>#{{ student.id }}</b></p>
+                <b>
+                    <p class="name">{{ student.firstname }} {{ student.lastname }}</p>
+                </b>
+                <p>{{ student.email }}</p>
+                <p>{{ student.age }} years old.</p>
+                <p>Joined: {{ student.created_at }}</p>
+                <div class="bio">
+                    <h4>Bio</h4>
+                    <p>{{ student.bio }}</p>
+                </div>
+            </div>
+        {% endfor %}
+    </div>
+{% endblock %}
+```
+app/templates/index.html
+
+Save and close the file.
+
+Here, you extend the base template and replace the contents of the content block. You use an ```<h1>``` heading that also serves as a title. You use a [Jinja ```for``` loop](https://jinja.palletsprojects.com/en/3.0.x/templates/#for) in the line ```{% for student in students %}``` to go through each student in the ```students``` variable that you passed from the ```index()``` view function to this template. You display the student ID, their first and last name, email, age, the date at which they were added to the database, and their bio.
+
+While in your ```flask_app``` directory with your virtual environment activated, tell Flask about the application (```app.py``` in this case) using the ```FLASK_APP``` environment variable. Then set the ```FLASK_ENV``` environment variable to ```development``` to run the application in development mode and get access to the debugger. For more information about the Flask debugger, see [How To Handle Errors in a Flask Application](https://www.digitalocean.com/community/tutorials/how-to-handle-errors-in-a-flask-application). Use the following commands to do this:
+
+```
+(.venv) gitpod /workspace/flask-sqlalchemy/app (main) $ export FLASK_APP=app
+(.venv) gitpod /workspace/flask-sqlalchemy/app (main) $ export FLASK_ENV=development
+```
+
+Next, run the application:
+
+```
+(.venv) gitpod /workspace/flask-sqlalchemy/app (main) $ flask run
+```
+
+With the development server running, visit the following URL using your browser:
+
+```
+http://127.0.0.1:5000/
+```
+
+You’ll see the students you added to the database in a page similar to the following:
+
+![image](https://github.com/user-attachments/assets/b8311d3a-4f93-4fbf-9b8b-3f2babab747d)
+
+You’ve displayed the students you have in your database on the index page. Next, you’ll create a route for a student page, where you can display the details of each individual student.
