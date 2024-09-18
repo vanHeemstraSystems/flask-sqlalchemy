@@ -9,7 +9,7 @@ Flask-sqlalchemy
 
 基于“如何使用 Flask 蓝图和 Flask-SQLAlchemy 构建大型 Flask 应用程序”，位于<https://www.digitalocean.com/community/tutorials/how-to-structure-a-large-flask-application-with-flask-blueprints-and-flask-sqlalchemy>
 
-## 100 - Introduction
+## 100 - 简介
 
 看[README.md](./100/README.md)
 
