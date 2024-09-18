@@ -8,15 +8,16 @@ $ cd app
 $ touch app.py
 ```
 
-This file will connect to an SQLite database called ```database.db```, and have a class called ```Student``` that represents your database students table for storing student information, in addition to your Flask routes. Add the following ```import``` statements at the top of ```app.py```:
+This file will connect to an SQLite database called ```app.db```, and have a class called ```Student``` that represents your database students table for storing student information, in addition to your Flask routes. Add the following ```import``` statements at the top of ```app.py```:
 
 ```python title="app.py"
 #!/usr/bin/env python
 import os
-from flask import Flask, render_template, request, url_for, redirect
-from flask_sqlalchemy import SQLAlchemy
 
 from sqlalchemy.sql import func
+from flask import Flask, render_template, request, url_for, redirect
+from flask_sqlalchemy import SQLAlchemy
+import config, socket
 ```
 app/app.py
 
@@ -32,22 +33,18 @@ Below the imports, you’ll set up a database file path, instantiate your Flask 
 
 ```python title="app.py"
 ...
-basedir = os.path.abspath(os.path.dirname(__file__))
-
+# configuration settings from config.py
 app = Flask(__name__)
-app.config['SQLALCHEMY_DATABASE_URI'] =\
-        'sqlite:///' + os.path.join(basedir, 'database.db')
-app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
+app.config.from_object(config)
 
+# define a database
 db = SQLAlchemy(app)
 ```
 app/app.py
 
-Here, you construct a path for your SQLite database file. You first define a base directory as the current directory. You use the [os.path.abspath()](https://docs.python.org/3.8/library/os.path.html#os.path.abspath) function to get the absolute path of the current file’s directory. The special ```__file__``` variable holds the pathname of the current ```app.py``` file. You store the absolute path of the base directory in a variable called ```basedir```.
+You then create a Flask application instance called ```app```, which you use to configure two Flask-SQLAlchemy [configuration keys](https://flask-sqlalchemy.palletsprojects.com/en/2.x/config/) in a file called ```config.py```:
 
-You then create a Flask application instance called ```app```, which you use to configure two Flask-SQLAlchemy [configuration keys](https://flask-sqlalchemy.palletsprojects.com/en/2.x/config/):
-
-- ```SQLALCHEMY_DATABASE_URI```: The database URI to specify the database you want to establish a connection with. In this case, the URI follows the format ```sqlite:///path/to/database.db```. You use the [os.path.join()](https://docs.python.org/3.8/library/os.path.html#os.path.join) function to intelligently join the base directory you constructed and stored in the ```basedir``` variable, and the ```database.db``` file name. This will connect to a ```database.db``` database file in your ```app``` directory. **The file will be created once you initiate the database**.
+- ```SQLALCHEMY_DATABASE_URI```: The database URI to specify the database you want to establish a connection with. In this case, the URI follows the format ```sqlite:///app.db```. This will connect to an ```app.db``` database file in a subdirectory ```instance``` of your ```app``` directory. **The file will be automatically created once you initiate the database**.
 
 - ```SQLALCHEMY_TRACK_MODIFICATIONS```: A configuration to enable or disable tracking modifications of objects. You set it to ```False``` to disable tracking and use less memory. For more, see [the configuration page](https://flask-sqlalchemy.palletsprojects.com/en/2.x/config/) in the Flask-SQLAlchemy documentation.
 
@@ -65,9 +62,7 @@ You then create a Flask application instance called ```app```, which you use to 
 >
 > For more, see the SQLAlchemy documentation for engine configuration.
 
-**OPTIMIZATION**: We move the configuration to a special ```config.py``` file.
-
-Update the ```app.py``` file by adding the reference to a ```config.py``` file:
+Add the reference to a ```config.py``` file:
 
 ```
 ...
@@ -83,7 +78,7 @@ Then add the following to the ```config.py``` file:
 ```python title="config.py"
 import os
 
-SQLALCHEMY_DATABASE_URI = 'sqlite:///database.db'
+SQLALCHEMY_DATABASE_URI = 'sqlite:///app.db'
 SQLALCHEMY_TRACK_MODIFICATIONS = False
 ```
 app/config.py
