@@ -15,6 +15,7 @@ app.config.from_object(config)
 # define a database
 db = SQLAlchemy(app)
 
+# models
 class Student(db.Model):
     __tablename__ = 'student'
     id = db.Column(db.Integer(), primary_key=True)
@@ -28,3 +29,10 @@ class Student(db.Model):
 
     def __repr__(self):
         return f'<Student {self.firstname}>'
+
+# routes
+
+@app.route('/')
+def index():
+    students = Student.query.all()
+    return render_template('index.html', students=students)
