@@ -8,6 +8,8 @@ Based on "How to Use Flask-SQLAlchemy to Interact with Databases in a Flask Appl
 
 Based on "How To Structure a Large Flask Application with Flask Blueprints and Flask-SQLAlchemy" at https://www.digitalocean.com/community/tutorials/how-to-structure-a-large-flask-application-with-flask-blueprints-and-flask-sqlalchemy
 
+Based on "Flask SQLAlchemy at Scale" at https://github.com/vanHeemstraSystems/flask-sqlalchemy-at-scale/
+
 ## 100 - Introduction
 
 See [README.md](./100/README.md)
