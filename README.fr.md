@@ -9,7 +9,7 @@ Based on "How to Use Flask-SQLAlchemy to Interact with Databases in a Flask Appl
 
 ## 100 - Introduction
 
-Voir[README.md](./100/README.md)
+See [README.md](./100/README.md)
 
 ## 200 - Exigences
 
