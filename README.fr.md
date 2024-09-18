@@ -5,11 +5,11 @@ flacon-sqlalchimie
 > Flask est un framework Web Python léger qui fournit des outils et des fonctionnalités utiles pour créer des applications Web dans le langage Python.
 > SQLAlchemy est une boîte à outils SQL qui fournit un accès efficace et performant aux bases de données relationnelles.
 
-Based on "How to Use Flask-SQLAlchemy to Interact with Databases in a Flask Application" at <https://www.digitalocean.com/community/tutorials/how-to-use-flask-sqlalchemy-to-interact-with-databases-in-a-flask-application>
+Basé sur « Comment utiliser Flask-SQLAlchemy pour interagir avec des bases de données dans une application Flask » sur<https://www.digitalocean.com/community/tutorials/how-to-use-flask-sqlalchemy-to-interact-with-databases-in-a-flask-application>
 
 ## 100 - Introduction
 
-See [README.md](./100/README.md)
+Voir[README.md](./100/README.md)
 
 ## 200 - Exigences
 
