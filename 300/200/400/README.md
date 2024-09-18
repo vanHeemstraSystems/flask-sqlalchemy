@@ -25,7 +25,7 @@ To add a student to your database, you’ll import the database object and the `
 >>> from models import Student
 >>> student_john = Student(firstname='john', lastname='doe',
 >>>                        email='jd@example.com', age=23,
->>>                        bio='Biologu student')
+>>>                        bio='Biology student')
 ```
 
 The ```student_john``` object represents a student that will be added to the database, but this object has not been written to the database yet. Check out the object in the flask shell to see its representation string you constructed with the ```__repr__()``` method:
