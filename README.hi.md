@@ -1,4 +1,4 @@
-फ्लास्क-sqlalchemy
+कुप्पी-sqlalchemy
 
 # फ्लास्क SQLAlchemy
 
@@ -9,7 +9,7 @@
 
 ## 100 - परिचय
 
-See [README.md](./100/README.md)
+देखना[README.md](./100/README.md)
 
 ## 200 - आवश्यकताएँ
 
