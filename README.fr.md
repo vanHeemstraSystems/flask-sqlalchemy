@@ -9,6 +9,8 @@ Basé sur « Comment utiliser Flask-SQLAlchemy pour interagir avec des bases de 
 
 Basé sur « Comment structurer une grande application Flask avec des plans Flask et Flask-SQLAlchemy » sur<https://www.digitalocean.com/community/tutorials/how-to-structure-a-large-flask-application-with-flask-blueprints-and-flask-sqlalchemy>
 
+Basé sur "Flask SQLAlchemy at Scale" sur<https://github.com/vanHeemstraSystems/flask-sqlalchemy-at-scale/>
+
 ## 100 - Introduction
 
 Voir[README.md](./100/README.md)
