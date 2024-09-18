@@ -21,8 +21,7 @@ Instance: /workspace/flask-sqlalchemy/app/instance
 To add a student to your database, you’ll import the database object and the ```Student``` model, and create an instance of the ```Student``` model, passing it student data through keyword arguments as follows:
 
 ```
->>> from app import db
->>> from models import Student
+>>> from app import db, Student
 >>> student_john = Student(firstname='john', lastname='doe',
 >>>                        email='jd@example.com', age=23,
 >>>                        bio='Biology student')

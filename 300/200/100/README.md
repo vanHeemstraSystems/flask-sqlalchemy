@@ -13,6 +13,7 @@ This file will connect to an SQLite database called ```app.db```, and have a cla
 ```python title="app.py"
 #!/usr/bin/env python
 import os
+import datetime, time
 
 from sqlalchemy.sql import func
 from flask import Flask, render_template, request, url_for, redirect
