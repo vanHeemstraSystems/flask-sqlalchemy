@@ -1,4 +1,4 @@
-कुप्पी-sqlalchemy
+फ्लास्क-sqlalchemy
 
 # फ्लास्क SQLAlchemy
 
@@ -7,7 +7,7 @@
 
 "फ्लास्क एप्लिकेशन में डेटाबेस के साथ इंटरैक्ट करने के लिए फ्लास्क-SQLAlchemy का उपयोग कैसे करें" पर आधारित<https://www.digitalocean.com/community/tutorials/how-to-use-flask-sqlalchemy-to-interact-with-databases-in-a-flask-application>
 
-Based on "How To Structure a Large Flask Application with Flask Blueprints and Flask-SQLAlchemy" at <https://www.digitalocean.com/community/tutorials/how-to-structure-a-large-flask-application-with-flask-blueprints-and-flask-sqlalchemy>
+"फ्लास्क ब्लूप्रिंट और फ्लास्क-SQLAlchemy के साथ एक बड़े फ्लास्क अनुप्रयोग की संरचना कैसे करें" पर आधारित<https://www.digitalocean.com/community/tutorials/how-to-structure-a-large-flask-application-with-flask-blueprints-and-flask-sqlalchemy>
 
 ## 100 - परिचय
 

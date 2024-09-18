@@ -1,4 +1,4 @@
-flask-sqlalchemy
+قارورة sqlalchemy
 
 # قارورة SQLAlchemy
 
@@ -7,7 +7,7 @@ flask-sqlalchemy
 
 استنادًا إلى "كيفية استخدام Flask-SQLAlchemy للتفاعل مع قواعد البيانات في تطبيق Flask" في<https://www.digitalocean.com/community/tutorials/how-to-use-flask-sqlalchemy-to-interact-with-databases-in-a-flask-application>
 
-استنادًا إلى "كيفية إنشاء تطبيق قارورة كبيرة باستخدام مخططات قارورة وFlask-SQLAlchemy" في<https://www.digitalocean.com/community/tutorials/how-to-structure-a-large-flask-application-with-flask-blueprints-and-flask-sqlalchemy>
+Based on "How To Structure a Large Flask Application with Flask Blueprints and Flask-SQLAlchemy" at <https://www.digitalocean.com/community/tutorials/how-to-structure-a-large-flask-application-with-flask-blueprints-and-flask-sqlalchemy>
 
 ## 100- مقدمة
 
